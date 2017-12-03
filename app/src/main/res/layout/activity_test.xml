@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is /res/layout/main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button android:id="@+id/getLyrics"
+        android:text="Get lyrics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doButton"
+        android:enabled="true" />
+
+    <EditText android:id="@+id/wordsToSpeak"
+        android:hint="Please get the lyrics or write the song"
+        android:layout_width="fill_parent"
+        android:layout_height="200px"/>
+
+    <TextView android:id="@+id/filenameLabel"
+        android:text="Set speech rate:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/speechRate"
+        android:text="1.0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/assocBtn"
+        android:text="Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doButton"
+        android:enabled="true" />
+    <Button android:id="@+id/stopBtn"
+        android:text="Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doButton"
+        android:enabled="true" />
+    <TextView android:id="@+id/song_title"
+        android:text="Select a track:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/songs_list"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/darker_gray"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </ListView>
+
+</LinearLayout>
